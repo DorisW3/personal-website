@@ -1,0 +1,66 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: none;
+}
+
+header,
+footer {
+  color: rgb(92, 145, 145);
+}
+
+body {
+  margin: 28px 40px;
+}
+
+a[href^="https"]:visited {
+  text-decoration: none;
+  color: rgb(196, 158, 109);
+}
+
+a[href^="#"] {
+  text-decoration: none;
+  color: rgb(196, 158, 109);
+}
+
+h1 {
+  color: darkslategray;
+}
+
+.menu {
+  border: 3px;
+  border-color: rgb(68, 115, 115);
+}
+
+h2,
+h3 {
+  color: rgb(73, 126, 126);
+}
+
+p {
+  color: rgb(102, 77, 77);
+}
+
+ul {
+  color: rgb(144, 86, 86);
+}
+
+.picture-container {
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
+
+.aboutme-container {
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
+
+.skills-container {
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
+
+.contact-container {
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
