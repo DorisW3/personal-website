@@ -4,37 +4,66 @@
   box-sizing: none;
 }
 
-header,
-footer {
+header {
   color: rgb(92, 145, 145);
 }
 
 body {
-  margin: 28px 40px;
+  margin: 20px 20px;
 }
 
-a[href^="https"]:visited {
+a[href^="https"] {
   text-decoration: none;
-  color: rgb(196, 158, 109);
+  color: burlywood;
 }
 
 a[href^="#"] {
   text-decoration: none;
-  color: rgb(196, 158, 109);
+  color: burlywood;
 }
 
 h1 {
   color: darkslategray;
+  font-size: 40px;
+  padding: 40px 20px;
+  border: none;
+  margin: 20px 0px;
+  background-color: burlywood;
+  width: 100%;
 }
 
+/*h1::before {
+  content: icon;
+} evtl. icon einfügen*/
+
 .menu {
-  border: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: row; zu welchem element?*/
+  flex-wrap: wrap;
+  position: fixed;
+  border: solid;
+  border-width: 2px;
   border-color: rgb(68, 115, 115);
+  border-radius: 4px;
+  background-color: rgb(68, 115, 115);
+  font-size: 20px;
 }
+
+/*ul {
+  align-content: space-between;
+}*/ 
 
 h2,
 h3 {
   color: rgb(73, 126, 126);
+}
+
+img {
+  border-radius: 8px;
+  width: 50%;
+  height: auto;
 }
 
 p {
@@ -43,11 +72,6 @@ p {
 
 ul {
   color: rgb(144, 86, 86);
-}
-
-.picture-container {
-  padding: 20px 0px;
-  margin: 20px 0px;
 }
 
 .aboutme-container {
@@ -63,4 +87,8 @@ ul {
 .contact-container {
   padding: 20px 0px;
   margin: 20px 0px;
+}
+
+footer {
+  color: rgb(92, 145, 145);
 }
