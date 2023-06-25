@@ -24,7 +24,7 @@ a[href^="#"] {
 
 h1 {
   color: darkslategray;
-  font-size: 40px;
+  font-size: 30px;
   padding: 40px 20px;
   border: none;
   margin: 20px 0px;
@@ -53,7 +53,7 @@ h1 {
 
 /*ul {
   align-content: space-between;
-}*/ 
+}*/
 
 h2,
 h3 {
