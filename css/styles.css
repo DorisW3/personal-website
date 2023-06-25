@@ -28,6 +28,12 @@ a[href^="#"] {
 
 h1 {
   color: darkslategray;
+  font-size: 30px;
+  padding: 40px 20px;
+  border: none;
+  margin: 20px 0px;
+  background-color: burlywood;
+  width: 100%;
 }
 
 /*h1::before {
@@ -66,7 +72,7 @@ ul {
 
 /*ul {
   align-content: space-between;
-}*/ 
+}*/
 
 h2,
 h3 {
