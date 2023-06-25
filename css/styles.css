@@ -1,7 +1,8 @@
-* {
+* *::before,
+*::after {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  box-sizing: none;
+  box-sizing: border-box;
 }
 
 header {
@@ -10,12 +11,17 @@ header {
 
 body {
   margin: 20px 20px;
-  margin: 20px 20px;
+  background-color: rgb(144, 86, 86);
+}
+
+article {
+  background-color: burlywood;
+  display: inline-block;
 }
 
 a[href^="https"] {
   text-decoration: none;
-  color: burlywood;
+  color: rgb(144, 86, 86);
 }
 
 a[href^="#"] {
@@ -28,6 +34,7 @@ h1 {
   font-size: 40px;
   padding: 40px 20px;
   border: none;
+  border-radius: 4px;
   margin: 20px 0px;
   background-color: burlywood;
   width: 100%;
@@ -61,20 +68,33 @@ h3 {
 }
 
 img {
-  border-radius: 8px;
-  width: 50%;
+  border-radius: 4px;
+  width: 25%;
   height: auto;
 }
 
 p {
-  color: rgb(102, 77, 77);
+  color: darkslategray;
 }
 
 ul {
-  color: rgb(144, 86, 86);
+  color: darkslategray;
 }
 
 .container {
-  padding: 20px 0px;
   margin: 20px 0px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 25px;
 }
+
+.list-style {
+  list-style: url("#"); /*funktioniert noch nicht*/
+}
+
+footer {
+  background-color: burlywood;
+  width: 100%;
+}
+
+/*rgb(102, 77, 77)*/
