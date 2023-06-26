@@ -1,21 +1,23 @@
-* {
+* *::before,
+*::after {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  box-sizing: none;
-}
-
-header {
-  color: rgb(92, 145, 145);
+  box-sizing: border-box;
 }
 
 body {
   margin: 20px 20px;
-  margin: 20px 20px;
+  background-color: rgb(144, 86, 86);
+}
+
+article {
+  background-color: burlywood;
+  display: inline-block;
 }
 
 a[href^="https"] {
   text-decoration: none;
-  color: burlywood;
+  color: rgb(144, 86, 86);
 }
 
 a[href^="#"] {
@@ -28,6 +30,7 @@ h1 {
   font-size: 40px;
   padding: 40px 20px;
   border: none;
+  border-radius: 4px;
   margin: 20px 0px;
   background-color: burlywood;
   width: 100%;
@@ -37,22 +40,32 @@ h1 {
   content: icon;
 } evtl. icon einfügen*/
 
+/*was kann ich bei dem code direkt unten drunter besser machen?*/
+
+section > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .menu {
   width: 100%;
   flex-wrap: wrap;
   position: fixed;
-  border: solid;
+  border: none;
   border-width: 2px;
   width: 100%;
   border-color: rgb(68, 115, 115);
   border-radius: 4px;
-  background-color: rgb(68, 115, 115);
+  background-color: darkslategray;
   font-size: 20px;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 h2,
@@ -61,20 +74,44 @@ h3 {
 }
 
 img {
-  border-radius: 8px;
-  width: 50%;
+  border-radius: 4px;
+  width: 25%;
   height: auto;
 }
 
 p {
-  color: rgb(102, 77, 77);
+  color: darkslategray;
 }
 
 ul {
-  color: rgb(144, 86, 86);
+  color: darkslategray;
 }
 
 .container {
-  padding: 20px 0px;
   margin: 20px 0px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 500px;
+  min-height: auto;
 }
+
+.list-style {
+  list-style: url("#"); /*funktioniert noch nicht*/
+}
+
+footer {
+  background-color: darkslategray;
+  width: 100%;
+}
+
+footer > p,
+footer > h2 {
+  color: burlywood;
+}
+
+/*rgb(102, 77, 77); rgb(92, 145, 145)*/
